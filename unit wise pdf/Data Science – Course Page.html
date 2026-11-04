@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Data Science – Course Page</title>
+<style>
+:root{--bg:#fff;--fg:#1f2328;--muted:#656d76;--accent:#8c1515;--line:#e3e5e8;--card:#f6f7f9;--link:#8c1515;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#15171a;--fg:#e6e8eb;--muted:#9aa2ab;--accent:#e0646a;--line:#2d3136;--card:#1d2024;--link:#f08a8f;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#15171a;--fg:#e6e8eb;--muted:#9aa2ab;--accent:#e0646a;--line:#2d3136;--card:#1d2024;--link:#f08a8f;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 -apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}
+header{border-bottom:4px solid var(--accent);background:var(--card)}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+.head{display:flex;align-items:center;gap:18px;padding:28px 0}
+.seal{width:64px;height:64px;border-radius:50%;background:var(--accent);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:22px;flex:none}
+h1{margin:0;font-size:2rem;line-height:1.2}
+.sub{color:var(--muted);margin:2px 0 0}
+nav{position:sticky;top:0;background:var(--bg);border-bottom:1px solid var(--line);z-index:5}
+nav .wrap{display:flex;gap:18px;overflow-x:auto;padding-top:10px;padding-bottom:10px;white-space:nowrap}
+main{padding:10px 0 80px}
+h2{margin:34px 0 10px;font-size:1.4rem;border-bottom:1px solid var(--line);padding-bottom:6px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:14px 16px}
+.card b{display:block;color:var(--muted);font-size:.78rem;text-transform:uppercase;letter-spacing:.05em;margin-bottom:2px}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;min-width:760px}
+th,td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top;font-size:.94rem}
+th{background:var(--card)}
+td.u{font-weight:600;white-space:nowrap}
+.pill{display:inline-block;margin:2px 4px 2px 0;padding:1px 9px;border:1px solid var(--line);border-radius:999px;font-size:.85rem}
+.soon{color:var(--muted)}
+ul{padding-left:20px}
+footer{border-top:1px solid var(--line);color:var(--muted);font-size:.85rem;padding:18px 0}
+.x{border:0;background:none;color:var(--accent);cursor:pointer;font-size:1rem;padding:0 0 0 6px}
+.panel{background:var(--card);border:2px solid var(--accent);border-radius:8px;padding:14px;margin:16px 0}
+.row{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0}
+.row input,.row select{flex:1 1 150px;padding:8px;border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--fg);font:inherit}
+button.b{padding:8px 14px;border:0;border-radius:6px;background:var(--accent);color:#fff;font:inherit;cursor:pointer}
+#tog{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:9;box-shadow:0 2px 8px rgba(0,0,0,.3)}
+body.editing [data-k],body.editing .tp{outline:1px dashed var(--accent);outline-offset:2px;min-height:1.2em}
+</style>
+</head>
+<body>
+<header><div class="wrap head">
+<div class="seal">DS</div>
+<div><h1>Data Science</h1>
+<p class="sub">Dept. of Information Technology · JNTUGV-CEV · <span data-k="term"></span></p></div>
+</div></header>
+<nav><div class="wrap"><a href="#info">Course Information</a><a href="#links">Quick Links</a><a href="#schedule">Syllabus &amp; Materials</a><a href="#comics">Comics</a><a href="#contact">Contact</a></div></nav>
+<main class="wrap" id="main">
+
+<h2 id="instructors">Instructors</h2>
+<div class="grid">
+<div class="card"><b>Instructor</b><span data-k="instructor"></span></div>
+<div class="card"><b>Teaching Assistants</b><span data-k="tas"></span></div>
+</div>
+
+<h2>Course Description</h2>
+<p>This course introduces the Python ecosystem for data science. Topics include: Python fundamentals and object-oriented programming; GUI and internet programming; numerical computing and data analysis with NumPy and Pandas; data preprocessing; and data visualization with Matplotlib. Each topic comes with slides, worksheets, study notes and illustrated comics.</p>
+
+<h2 id="info">Course Information</h2>
+<div class="grid">
+<div class="card"><b>Time and Location</b><span data-k="time"></span></div>
+<div class="card"><b>Duration</b><span data-k="duration"></span></div>
+<div class="card"><b>Prerequisites</b><span data-k="prereq"></span></div>
+</div>
+
+<h2 id="links">Quick Links</h2>
+<ul id="quick"></ul>
+
+<h2 id="schedule">Syllabus and Course Materials</h2>
+<div class="tbl"><table>
+<thead><tr><th>Unit</th><th>Topics</th><th>Slides</th><th>Worksheets</th><th>Comics</th><th>Notes</th></tr></thead>
+<tbody id="rows"></tbody>
+</table></div>
+
+<h2 id="comics">Comics</h2>
+<p>Narrated comics explain tricky topics panel by panel.</p>
+<div class="grid" id="comicGrid"></div>
+
+<h2 id="contact">Contact and Communication</h2>
+<p data-k="contact"></p>
+</main>
+<footer><div class="wrap">Layout inspired by the Stanford CS229 course page.</div></footer>
+
+<script id="data" type="application/json">{"f":{"term":"Academic Year 2026–27","instructor":"Your Name Here","tas":"Add names here","time":"Add days, time and room","duration":"5 units · 56 hours","prereq":"Basic programming and mathematics","contact":"Add the preferred channel (email, WhatsApp group, LMS) and office hours here."},"units":[{"n":"Unit 1","topics":"Python basics, object-oriented programming, exceptions","slides":[],"sheets":[],"comics":[],"notes":[]},{"n":"Unit 2","topics":"GUI programming, internet programming, tools, Python/C integration","slides":[],"sheets":[],"comics":[],"notes":[]},{"n":"Unit 3","topics":"NumPy and Pandas","slides":[],"sheets":[],"comics":[],"notes":[]},{"n":"Unit 4","topics":"Data preprocessing","slides":[],"sheets":[],"comics":[],"notes":[]},{"n":"Unit 5","topics":"Data visualization with Matplotlib","slides":[],"sheets":[],"comics":[],"notes":[]}],"quick":[]}</script>
+<script>
+var S=JSON.parse(document.getElementById('data').textContent);
+var edit=false,CAT=[['slides','Slides'],['sheets','Worksheets'],['comics','Comics'],['notes','Notes']];
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+function safe(u){u=String(u).trim();if(!/^https?:\/\//i.test(u))u='https://'+u;return u}
+function pill(x,u,k,i){return '<span class="pill"><a href="'+esc(x.u)+'" target="_blank" rel="noopener">'+esc(x.t)+'</a>'+(edit?'<button class="x" data-u="'+u+'" data-c="'+k+'" data-i="'+i+'" title="Remove">×</button>':'')+'</span>'}
+function cell(a,u,k){return a.length?a.map(function(x,i){return pill(x,u,k,i)}).join(''):'<span class="soon">coming soon</span>'}
+function render(){
+document.querySelectorAll('[data-k]').forEach(function(e){e.textContent=S.f[e.dataset.k];e.contentEditable=edit?'true':'false'});
+document.getElementById('rows').innerHTML=S.units.map(function(u,ui){
+return '<tr><td class="u">'+esc(u.n)+'</td><td class="tp" data-ui="'+ui+'"'+(edit?' contenteditable="true"':'')+'>'+esc(u.topics)+'</td>'+CAT.map(function(c){return '<td>'+cell(u[c[0]],ui,c[0])+'</td>'}).join('')+'</tr>'}).join('');
+var cg=[];S.units.forEach(function(u){u.comics.forEach(function(c){cg.push('<div class="card"><b>'+esc(u.n)+'</b><a href="'+esc(c.u)+'" target="_blank" rel="noopener">'+esc(c.t)+'</a></div>')})});
+document.getElementById('comicGrid').innerHTML=cg.join('')||'<div class="card soon">No comics added yet.</div>';
+document.getElementById('quick').innerHTML=S.quick.length?S.quick.map(function(x,i){return '<li><a href="'+esc(x.u)+'" target="_blank" rel="noopener">'+esc(x.t)+'</a>'+(edit?'<button class="x" data-q="'+i+'" title="Remove">×</button>':'')+'</li>'}).join(''):'<li class="soon">Syllabus, notes and other shared links will appear here.</li>';
+document.body.classList.toggle('editing',edit)}
+document.addEventListener('input',function(e){var t=e.target;if(t.dataset&&t.dataset.k)S.f[t.dataset.k]=t.textContent;if(t.dataset&&t.dataset.ui!==undefined)S.units[t.dataset.ui].topics=t.textContent});
+document.addEventListener('click',function(e){var b=e.target.closest&&e.target.closest('.x');if(!b)return;
+if(b.dataset.q!==undefined)S.quick.splice(+b.dataset.q,1);else S.units[+b.dataset.u][b.dataset.c].splice(+b.dataset.i,1);render()});
+function build(){var d=document.documentElement.cloneNode(true);
+d.querySelector('#data').textContent=JSON.stringify(S).replace(/</g,'\\u003c');
+['rows','comicGrid','quick'].forEach(function(id){d.querySelector('#'+id).innerHTML=''});
+d.querySelectorAll('[data-k]').forEach(function(e){e.textContent='';e.removeAttribute('contenteditable')});
+d.querySelectorAll('[data-edit]').forEach(function(e){e.remove()});
+d.querySelector('body').removeAttribute('class');
+return '<!DOCTYPE html>\n'+d.outerHTML}
+function startEditor(art){
+var tog=document.createElement('button');tog.className='b';tog.id='tog';tog.setAttribute('data-edit','');tog.textContent='Edit page';document.body.appendChild(tog);
+var panel=null;
+function msg(t){var m=document.getElementById('pm');if(m)m.textContent=t}
+tog.onclick=function(){edit=!edit;tog.textContent=edit?'Close editor':'Edit page';
+if(edit){panel=document.createElement('div');panel.className='panel';panel.setAttribute('data-edit','');
+panel.innerHTML='<b>Edit mode</b> – click any outlined text to change it, × removes a link.'+
+'<div class="row"><select id="pu">'+S.units.map(function(u,i){return '<option value="'+i+'">'+esc(u.n)+'</option>'}).join('')+'</select><select id="pc">'+CAT.map(function(c){return '<option value="'+c[0]+'">'+c[1]+'</option>'}).join('')+'</select><input id="pl" placeholder="Label (e.g. Python basics slides)"><input id="pr" placeholder="https://…"><button class="b" id="pa">Add link</button></div>'+
+'<div class="row"><input id="ql" placeholder="Quick link label"><input id="qr" placeholder="https://…"><button class="b" id="qa">Add quick link</button></div>'+
+'<div class="row"><button class="b" id="ps">Save &amp; publish</button><span id="pm"></span></div>';
+document.getElementById('main').prepend(panel);
+document.getElementById('pa').onclick=function(){var l=document.getElementById('pl').value.trim(),r=document.getElementById('pr').value.trim();if(!l||!r){msg('Enter a label and a link.');return}
+S.units[+document.getElementById('pu').value][document.getElementById('pc').value].push({t:l,u:safe(r)});document.getElementById('pl').value='';document.getElementById('pr').value='';msg('Added. Save when done.');render()};
+document.getElementById('qa').onclick=function(){var l=document.getElementById('ql').value.trim(),r=document.getElementById('qr').value.trim();if(!l||!r){msg('Enter a label and a link.');return}
+S.quick.push({t:l,u:safe(r)});document.getElementById('ql').value='';document.getElementById('qr').value='';msg('Added. Save when done.');render()};
+document.getElementById('ps').onclick=async function(){msg('Saving…');try{await art.publish(build())}catch(err){msg(err&&err.code==='conflict'?'Someone saved first; the page is reloading.':'Could not save: '+((err&&err.code)||'error'))}}}
+else if(panel){panel.remove();panel=null}
+render()}}
+render();
+if(window.claude&&claude.use){Promise.all([claude.use('user'),claude.use('artifact')]).then(function(r){var u=r[0],a=r[1];if(u&&a&&u.canEdit())startEditor(a)}).catch(function(){})}
+</script>
+</body>
+</html>
