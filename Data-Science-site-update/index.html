@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Data Science</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" crossorigin="anonymous">
+<style>
+  body{font-family:-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+  .navbar{background:#1f3a5f}
+  .seal{width:40px;height:40px;border-radius:50%;background:#fff;color:#1f3a5f;font-weight:700;display:flex;align-items:center;justify-content:center;margin:0 16px 0 20px}
+  .jumbotron{background:#f2f5f9;border-bottom:4px solid #1f3a5f}
+  table.people{table-layout:fixed}
+  table.people td{width:140px;word-wrap:break-word;vertical-align:top}
+  .instructor{text-align:center;font-weight:600}
+  .instructor a{color:#1f3a5f}
+  .instructorphoto img{width:110px;height:110px;border-radius:50%;object-fit:cover;border:2px solid #d5dbe3;margin-bottom:6px}
+  .materials td,.materials th{vertical-align:top;font-size:.95rem}
+  .materials a{display:inline-block;margin:0 8px 4px 0}
+  dt{margin-top:1rem}
+  .views{margin-left:auto;margin-right:20px;color:#fff;font-size:.9rem;background:rgba(255,255,255,.15);padding:4px 12px;border-radius:14px}
+</style>
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W1BNRT17C5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-W1BNRT17C5');
+</script>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-md navbar-dark">
+  <img class="seal" src="https://jntugv.edu.in/assets/jntugvcev-EAvRZBpt.jpg" alt="JNTUGV logo">
+  <a class="navbar-brand" href="#">Data Science</a>
+  <span class="views" id="views" title="Total page views" hidden>👁 Views: <b id="views-count">…</b></span>
+</nav>
+
+<div class="jumbotron jumbotron-fluid">
+<div class="container">
+  <h1 class="display-5">Data Science</h1>
+  <!-- EDIT HERE (1): college, department and term -->
+  <h2 class="display-5">Dept. of Information Technology, JNTUGV-CEV</h2>
+  <br>
+
+  <!-- EDIT HERE (2): INSTRUCTORS. Copy a whole <td>...</td> block to add another person -->
+  <h2>Instructors</h2>
+  <table class="people"><tr>
+    <td>
+      <div class="instructor">
+        <a href="https://api.jntugv.edu.in/people-images/1788324859584-dc97d3ef-16c9-4210-8b7b-b86854781333.jpg">
+          <div class="instructorphoto"><img src="https://api.jntugv.edu.in/people-images/1788324859584-dc97d3ef-16c9-4210-8b7b-b86854781333.jpg" alt="Instructor"></div>
+          <div>Prof G.JayaSuma</div>
+        </a>
+      </div>
+    </td>
+  </tr></table>
+  <br>
+
+  <!-- EDIT HERE (3): COURSE STAFF. Copy a whole <td>...</td> block to add another person -->
+  <h3>Course Staff</h3>
+  <table class="people"><tr>
+    <td>
+      <div class="instructor">
+        <a href="https://www.linkedin.com/in/kella-bala-durga-krishnaveni-9b235220b">
+          <div class="instructorphoto"><img src="https://drive.google.com/thumbnail?id=1n7fFwouHvTfV4gGYnt2cD1M8OzuaeckO&sz=w400" alt="TA"></div>
+          <div>K.B.D.Krishnaveni</div>
+        </a>
+      </div>
+    </td>
+    <td>
+      <div class="instructor">
+        <a href="https://www.linkedin.com/in/kirankumarmukthala/">
+          <div class="instructorphoto"><img src="https://drive.google.com/thumbnail?id=12keGHkIZ30bsGIG505VpwCVRsL6kIi_Y&sz=w400" alt="TA"></div>
+          <div>M.Kiran</div>
+        </a>
+      </div>
+    </td>
+    <td>
+      <div class="instructor">
+        <a href="https://www.linkedin.com/in/sandanala-vinila-mar2004/">
+          <div class="instructorphoto"><img src="https://drive.google.com/thumbnail?id=1iYMshG7oxYKdnGzYhnzaMxeNP6ic2yv3&sz=w400" alt="TA"></div>
+          <div>S.Vinila</div>
+        </a>
+      </div>
+    </td>
+  </tr></table>
+  <br>
+
+  <p><strong>Course Description</strong>&nbsp;&nbsp; This course introduces the Python ecosystem for data science. Topics include: Python fundamentals and object-oriented programming; GUI and internet programming; numerical computing and data analysis with NumPy and Pandas; data preprocessing; and data visualization with Matplotlib. Each topic comes with slides, worksheets, study notes and illustrated comics.</p>
+</div>
+</div>
+
+<section id="info">
+<div class="container">
+  <h2>Course Information</h2>
+  <dl>
+    <dt>Prerequisites</dt>
+    <dd>Basic programming and mathematics.</dd>
+
+    <dt>Quick Links</dt>
+    <!-- EDIT HERE (5): QUICK LINKS. Copy a <li> line to add more links under any heading -->
+    <ul>
+      <li><a href="pdfs/Syllabus.pdf" target="_blank" rel="noopener">Syllabus (PDF)</a></li>
+      <li><b>Study Notes</b>
+        <ul>
+          <li><a href="pdfs/Study-Notes-Unit-1.pdf" target="_blank" rel="noopener">Unit 1 – Python basics, OOP and exceptions</a></li>
+          <li><a href="pdfs/Study-Notes-Unit-2.pdf" target="_blank" rel="noopener">Unit 2 – GUI programming, internet programming, tools</a></li>
+          <li><a href="pdfs/Study-Notes-Unit-3.pdf" target="_blank" rel="noopener">Unit 3 – NumPy and Pandas</a></li>
+          <li><a href="pdfs/Study-Notes-Unit-4.pdf" target="_blank" rel="noopener">Unit 4 – Data preprocessing and visualization</a></li>
+          <li><a href="pdfs/Study-Notes-Unit-5.pdf" target="_blank" rel="noopener">Unit 5 – Machine Learning for Data Science</a></li>
+        </ul>
+      </li>
+      <li><b>Slides</b>
+        <ul>
+          <li><a href="pdfs/Slides-Unit-1.pdf" target="_blank" rel="noopener">Unit 1 – Python basics, OOP and exceptions</a></li>
+          <li><a href="pdfs/Slides-Unit-2.pdf" target="_blank" rel="noopener">Unit 2 – GUI programming, internet programming, tools</a></li>
+          <li><a href="pdfs/Slides-Unit-3.pdf" target="_blank" rel="noopener">Unit 3 – NumPy and Pandas</a></li>
+          <li><a href="pdfs/Slides-Unit-4.pdf" target="_blank" rel="noopener">Unit 4 – Data preprocessing and visualization</a></li>
+          <li><a href="pdfs/Slides-Unit-5.pdf" target="_blank" rel="noopener">Unit 5 – Machine Learning for Data Science</a></li>
+        </ul>
+      </li>
+      <li><b>Worksheets</b>
+        <ul>
+          <li><a href="pdfs/Worksheet-Unit-1.pdf" target="_blank" rel="noopener">Unit 1 – Worksheet</a></li>
+          <li><a href="pdfs/Worksheet-Unit-2.pdf" target="_blank" rel="noopener">Unit 2 – Worksheet</a></li>
+          <li><a href="pdfs/Worksheet-Unit-3.pdf" target="_blank" rel="noopener">Unit 3 – Worksheet</a></li>
+          <li><a href="pdfs/Worksheet-Unit-4.pdf" target="_blank" rel="noopener">Unit 4 – Worksheet</a></li>
+          <li><a href="pdfs/Worksheet-Unit-5.pdf" target="_blank" rel="noopener">Unit 5 – Worksheet</a></li>
+        </ul>
+      </li>
+      <li><b>Comic Images</b>
+        <ul>
+          <li><a href="pdfs/Comics-Unit-1.pdf" target="_blank" rel="noopener">Comic Unit 1 – Python basics, OOP and exceptions</a></li>
+          <li><a href="pdfs/Comics-Unit-2.pdf" target="_blank" rel="noopener">Comic Unit 2 – GUI programming, internet programming, tools</a></li>
+          <li><a href="pdfs/Comics-Unit-3.pdf" target="_blank" rel="noopener">Comic Unit 3 – NumPy and Pandas</a></li>
+          <li><a href="pdfs/Comics-Unit-4.pdf" target="_blank" rel="noopener">Comic Unit 4 – Data preprocessing and visualization</a></li>
+          <li><a href="pdfs/Comics-Unit-5.pdf" target="_blank" rel="noopener">Comic Unit 5 – Machine Learning for Data Science</a></li>
+        </ul>
+      </li>
+    </ul>
+
+
+    <dt>Contact and Communication</dt>
+    <!-- EDIT HERE (6): how students contact you -->
+    <dd>Post questions in the course WhatsApp +91 88973 44078 or
+       email <a href="mailto:gjsuma.it@jntugvcev.edu.in">gjsuma.it@jntugvcev.edu.in</a>.</dd>
+  </dl>
+</div>
+</section>
+
+
+
+<br><br>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+
+<script>
+/* ===================== SETTINGS (edit these once) ===================== */
+var GOATCOUNTER_CODE = "krishnaveni";                                   // e.g. "jntugv-datascience"  (see README, step 1)
+/* ====================================================================== */
+
+/* ---------- 1. Page-view counter (GoatCounter) ---------- */
+(function(){
+  if(!GOATCOUNTER_CODE) return;
+  var s=document.createElement("script");
+  s.async=true; s.src="https://gc.zgo.at/count.js";
+  s.setAttribute("data-goatcounter","https://"+GOATCOUNTER_CODE+".goatcounter.com/count");
+  document.head.appendChild(s);
+
+  fetch("https://"+GOATCOUNTER_CODE+".goatcounter.com/counter/TOTAL.json")
+    .then(function(r){ if(!r.ok) throw 0; return r.json(); })
+    .then(function(d){
+      document.getElementById("views-count").textContent = d.count;
+      document.getElementById("views").hidden = false;
+    }).catch(function(){ /* keep the badge hidden if the counter is unavailable */ });
+})();
+
+/* ---------- 2. Count PDF opens in GoatCounter (shows in your dashboard) ---------- */
+document.addEventListener("click",function(e){
+  var a=e.target.closest('a[href^="pdfs/"]'); if(!a) return;
+  try{ if(window.goatcounter&&window.goatcounter.count){
+    var n=decodeURIComponent(a.getAttribute("href").split("/").pop());
+    window.goatcounter.count({path:"pdf/"+n,title:n,event:true}); } }catch(err){}
+});
+</script>
+</body>
+</html>
